@@ -1,0 +1,77 @@
+Para propor um planejamento de projeto eficiente para a startup Nova Tech, vamos considerar as melhores práticas da AWS e o foco no alcance global. O orçamento será utilizado estrategicamente para garantir uma infraestrutura robusta e escalável.
+
+**Planejamento do Projeto:**
+
+1. **Análise de Requisitos e Definição de Escopo:**
+   - Coletar e analisar os requisitos atuais e futuros do e-commerce.
+   - Definir o escopo do projeto, incluindo os serviços AWS necessários para alcançar o objetivo de alcance global.
+
+2. **Desenho da Arquitetura:**
+   - Criar um diagrama de arquitetura detalhado, considerando redundância, escalabilidade e distribuição global.
+   - Selecionar os serviços AWS apropriados para cada componente da infraestrutura.
+
+3. **Estimativa de Custos:**
+   - Utilizar a calculadora da AWS para estimar os custos com base na arquitetura proposta.
+   - Garantir que a solução se encaixe dentro do orçamento disponível.
+
+4. **Desenvolvimento do Plano de Implementação:**
+   - Elaborar um cronograma de implementação faseada da infraestrutura.
+   - Definir marcos e entregas para cada fase do projeto.
+
+5. **Revisão e Aprovação:**
+   - Apresentar a proposta de arquitetura e estimativa de custos para a Nova Tech.
+   - Receber feedback e realizar ajustes necessários antes da aprovação final.
+
+**Divisão de Tarefas para a Equipe:**
+
+- **Membro 1 (Líder de Projeto):**
+   - Coordenação da equipe e gerenciamento do projeto.
+   - Comunicação com o cliente e gerenciamento de expectativas.
+
+- **Membro 2 (Arquiteto de Soluções):**
+   - Desenho da arquitetura e seleção dos serviços AWS.
+   - Responsável pela estimativa de custos e otimização de recursos.
+
+- **Membro 3 (Especialista em Cloud):**
+   - Aprofundamento nas funcionalidades dos serviços AWS selecionados.
+   - Suporte técnico na definição da arquitetura e na estimativa de custos.
+
+- **Membro 4 (Analista de Requisitos):**
+   - Coleta e análise dos requisitos do cliente.
+   - Documentação dos requisitos e apoio na definição do escopo.
+
+- **Membro 5 (Especialista em Segurança):**
+   - Avaliação e recomendação de práticas de segurança na arquitetura.
+   - Garantia de conformidade com padrões de segurança global.
+
+**Kanban - Cards para Sprints:**
+
+- **Card 1: Reunião de Kick-off**
+   - **Descrição:** Primeira reunião com a equipe para definir objetivos e expectativas do projeto.
+   - **Ação:** Agendar reunião e preparar agenda inicial.
+
+- **Card 2: Coleta de Requisitos**
+   - **Descrição:** Entrevistas com a equipe da Nova Tech para entender as necessidades e requisitos técnicos.
+   - **Ação:** Realizar sessões de coleta de requisitos e documentar resultados.
+
+- **Card 3: Desenho da Arquitetura Inicial**
+   - **Descrição:** Criação de um rascunho da arquitetura baseado nos requisitos coletados.
+   - **Ação:** Desenhar diagrama de arquitetura e revisar com a equipe.
+
+- **Card 4: Estimativa de Custos Preliminar**
+   - **Descrição:** Utilizar a calculadora da AWS para estimar custos iniciais da arquitetura proposta.
+   - **Ação:** Elaborar estimativa de custos e ajustar conforme necessário.
+
+- **Card 5: Revisão de Segurança**
+   - **Descrição:** Revisão da arquitetura com foco em segurança para garantir conformidade e proteção de dados.
+   - **Ação:** Identificar e documentar melhorias de segurança.
+
+- **Card 6: Apresentação de Proposta**
+   - **Descrição:** Preparação da apresentação final para o cliente, incluindo arquitetura, estimativa de custos e plano de implementação.
+   - **Ação:** Desenvolver material de apresentação e ensaiar apresentação.
+
+- **Card 7: Feedback e Ajustes**
+   - **Descrição:** Coletar feedback da apresentação e realizar ajustes na proposta conforme necessário.
+   - **Ação:** Revisar feedback e atualizar documentação e arquitetura.
+
+Cada card deve ser movido pelo quadro Kanban conforme as tarefas progridam das fases de "To Do", "Doing" para "Done". A equipe deve se reunir regularmente para atualizar o quadro e discutir o progresso do projeto.

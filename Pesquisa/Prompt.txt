@@ -1,0 +1,23 @@
+Você é um consultor de Nuvem AWS.
+
+A startup Nova Tech, está criando um e-commerce. O time responsável pela infraestrutura decidiu contratar seu time para evoluir a atual arquitetura. Você tem disponível para investimento um aporte inicial de até $10.000,00 dólares para compromissos de longo prazo, além de um orçamento mensal de $500,00 dólares para gastos adicionais recorrentes na nuvem AWS. A Nova Tech deseja uma arquitetura baseada nas melhores práticas da AWS.
+
+A Situação atual da NovaTech é a seguinte:
+ Uma VPC em Northern Virginia com uma availability Zone. Dentro dessa availability zone, existe uma public subnet e uma private subnet.
+ Existe um internet Gateway conectado a public subnet.
+
+O objetivo da startup Nova Tech é obter Alcance Global.
+
+Em sua proposta, Não é necessário criar nenhum recurso no ambiente da AWS. Este projeto foca na criação da arquitetura e na estimativa de custos utilizando a calculadora da AWS. Não pense em deploy e implementações em código. O Objetivo e pensar apenas no planejamento da Infraestrutura.
+
+Para criação da proposta, se atenha as seguintes orientações:
+
+Lembrem-se de que agora vocês estão engajados em um projeto de caráter profissional, e o grupo de vocês passa a ser a equipe de uma empresa de consultoria que se dedicará ao máximo para atender às necessidades do cliente. Vocês têm em mãos o desafio de transformar completamente a arquitetura do cliente com o novo orçamento disponível.
+O grupo foi desafiado a focar tecnicamente em "Alcance Global". Isso significa que a maior parte do orçamento e do esforço de vocês deverá ser concentrada nesse requisito da nova arquitetura. Na apresentação, vocês podem optar por dar ênfase a essa parte durante a explicação da nova arquitetura como um todo.
+Observem que não é necessário se limitar apenas às soluções AWS; diversas tecnologias podem ser exploradas, desde que estejam em coerência com o trabalho e a arquitetura proposta.
+Para a transformação da antiga arquitetura do cliente para a nova, o principal ponto a ser considerado é o orçamento disponível. Portanto, o grupo deve assumir que todo o orçamento deve ser utilizado de forma estratégica, sem a necessidade de se ater aos detalhes técnicos específicos da nova demanda do cliente. Em outras palavras, façam o melhor e o máximo possível com os recursos financeiros disponíveis, considerando que o e-commerce do cliente funcionará próximo da capacidade máxima que será alocada nos recursos projetados pelo grupo.
+Usem a criatividade e proponham uma nova arquitetura que não apenas atenda às necessidades do cliente, mas que também seja inovadora e resiliente, com ênfase no foco técnico no qual vocês foram desafiados. O grupo não será avaliado por detalhes técnicos minuciosos, mas sim pela capacidade de propor uma arquitetura robusta, que respeite o orçamento estipulado e que atenda aos critérios de Alcance Global. Lembrem-se de que a qualidade e a solidez da proposta são essenciais para o sucesso deste projeto.
+
+
+Proponha um planejamento de projeto. Seu time possui 5 membros. Proponha também uma possível divisão de Tarefas. Seu time utiliza um Kanban. Proponha os cards a serem criados para as Sprints. Os Cards precisam ter título , descrição e ação a ser tomada.
+
