@@ -6,6 +6,8 @@
 
 ## 📋 Board - https://trello.com/b/bAbDjFvJ/alcance-global-%F0%9F%8F%A0-repo-em-https-githubcom-bhnunes-alcanceglobaledn
 
+## 📊 Relatório de Atividades - https://docs.google.com/document/d/1VSxGERgPeSYxXPTTnrPPYjS3QlNW-uwD/edit?usp=drive_link&ouid=113243357333179718222&rtpof=true&sd=true
+
 ## 🎯 Objetivo
 
 Prepare-se para turbinar suas habilidades em nuvem com este desafio eletrizante! ⚡️ O objetivo aqui é projetar e implementar uma infraestrutura robusta e escalável para uma empresa de e-commerce em plena expansão. 📈
