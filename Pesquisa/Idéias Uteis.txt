@@ -1,0 +1,3 @@
+Apps de segurança:
+
+AWS System Manager - grenciamento de Patches
