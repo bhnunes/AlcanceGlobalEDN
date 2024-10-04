@@ -1,0 +1,91 @@
+Arquitetura da Solução:
+
+A arquitetura da solução, ilustrada no diagrama anexo, é composta por diversos serviços AWS que atuam em conjunto para oferecer uma plataforma de e-commerce completa e escalável. A solução foi dividida em diferentes camadas, cada uma com responsabilidades específicas:
+
+1. Camada de Processos:
+
+AWS Cognito: Serviço de autenticação e autorização de usuários, gerenciando o acesso seguro à plataforma.
+
+Route 53: Serviço de DNS, direcionando o tráfego para a infraestrutura da Nova Tech de forma eficiente e distribuída.
+
+Cloudformation: Serviço de provisionamento de infraestrutura como código, automatizando a criação e gerenciamento de recursos AWS.
+
+ELB: Load balancer, distribuindo o tráfego de forma inteligente entre os servidores EC2 para garantir alta disponibilidade e desempenho.
+
+EC2 (com Autoscaling): Servidores virtuais escaláveis que hospedam os aplicativos da Nova Tech, ajustando automaticamente sua capacidade de acordo com a demanda.
+
+EBS: Armazenamento de blocos conectado aos servidores EC2, fornecendo performance e durabilidade para os dados da plataforma.
+
+Rekognition: Serviço de visão computacional, habilitando funcionalidades como reconhecimento de imagens e análise de conteúdo visual.
+
+Elasticache: Cache in-memory, otimizando o desempenho das consultas de dados e diminuindo a latência.
+
+RDS (com Autoscaling): Banco de dados relacional, gerenciado pela AWS, que garante alta disponibilidade e performance para os dados da plataforma.
+
+Dynamo DB (com Autoscaling): Banco de dados NoSQL, gerenciado pela AWS, ideal para armazenar dados em grande escala com alta performance e escalabilidade.
+
+S3: Armazenamento de objetos, garantindo segurança, durabilidade e alta disponibilidade para arquivos como imagens, vídeos e outros dados.
+
+Glacier: Armazenamento de dados de arquivo, ideal para backups e dados de arquivo de longo prazo, oferecendo baixo custo e alta durabilidade.
+
+Cloudfront: CDN global, cacheando conteúdo estático da plataforma da Nova Tech em diferentes regiões do mundo, otimizando o tempo de carregamento para os clientes.
+
+2. Camada de Monitoramento:
+
+Cloudwatch: Serviço de monitoramento e métricas, coletando dados sobre a performance da plataforma e gerando alertas em caso de problemas.
+
+Alarms: Define regras que disparam alertas com base em métricas do Cloudwatch, permitindo uma rápida detecção e resposta a problemas.
+
+Rules: Gerencia a criação de regras de monitoramento e automação de ações, como escalonamento de recursos, com base em eventos específicos.
+
+Cloudtrail: Serviço de auditoria que registra todas as ações realizadas na conta AWS, garantindo a rastreabilidade e segurança das operações.
+
+X-ray: Ferramenta de depuração e monitoramento de desempenho para serviços baseados em microsserviços, facilitando a identificação de gargalos e problemas de performance.
+
+3. Camada de BI:
+
+Glue: Serviço de ETL (Extração, Transformação e Carregamento), utilizado para preparar e transformar dados para análise em tempo real.
+
+Athena: Serviço de consulta de dados, facilitando a análise de grandes volumes de dados armazenados em S3, sem necessidade de gerenciar servidores.
+
+Redshift: Data warehouse escalável e com alta performance, ideal para analisar dados de negócios em grande escala e gerar insights.
+
+4. Camada de Segurança:
+
+IAM: Serviço de gerenciamento de identidade e acesso, controlando as permissões dos usuários e recursos da plataforma.
+
+KMS: Serviço de gerenciamento de chaves, garantindo a segurança e confidencialidade dos dados criptografados na plataforma.
+
+Shield: Serviço de proteção contra ataques DDoS (Distributed Denial of Service), garantindo a disponibilidade da plataforma.
+
+WAF: Firewall de aplicação, protegendo a plataforma contra ataques web comuns, como SQL Injection e Cross-Site Scripting (XSS).
+
+GuardDuty: Serviço de detecção de ameaças, monitorando a conta AWS em busca de atividades suspeitas e alertando a equipe de segurança.
+
+Macie: Serviço de segurança de dados, detectando e classificando dados confidenciais armazenados em S3, garantindo a conformidade com regulamentos de privacidade.
+
+MFA: Autenticação de dois fatores, adicionando uma camada extra de segurança ao acesso à plataforma.
+
+Vantagens da Solução:
+
+A solução proposta oferece diversas vantagens para a Nova Tech, incluindo:
+
+Escalabilidade: A plataforma é projetada para lidar com picos de demanda e crescimento global, adaptando seus recursos automaticamente para garantir a performance.
+
+Segurança: A solução foi construída com foco em segurança, utilizando serviços AWS robustos e práticas de segurança recomendadas para proteger a plataforma e os dados dos clientes.
+
+Otimização de Custos: O uso de serviços gerenciados pela AWS, como RDS e Dynamo DB, reduz os custos operacionais, liberando a equipe da Nova Tech para focar em seus negócios.
+
+Agilidade: O uso de Cloudformation e outras ferramentas de automação facilita o gerenciamento e a atualização da plataforma, permitindo que a Nova Tech implemente novas funcionalidades com rapidez.
+
+Próximos Passos:
+
+Após a aprovação da solução, a equipe da Nova Tech seguirá com as seguintes etapas:
+
+Testes e Validação:: Embora a proposta apresentada entregue os requisitos funcionais e não funcionais propostos pelo cliente com relação ao seu alcance global, sabemos que a combinação dos serviços talvez exceda o budget inicial proposto. O próximo passo  portanto é analisar quais simulações financeiras são compatíveis com o orçamento inicial. Após isso, analisaremos quais serviços são essenciais ao negócio e possíveis soluções open source que enteguem valor similar.
+
+Apresentação Final: Apresentar a nova plataforma para produção ao cliente Nova Tech.
+
+Conclusão:
+
+A solução de infraestrutura em nuvem AWS proposta para a Nova Tech oferece uma plataforma robusta, escalável e segura para atender às necessidades de uma empresa de e-commerce em crescimento global. O uso de serviços AWS gerenciados e práticas de segurança recomendadas garantem uma experiência online confiável e eficiente para os clientes da Nova Tech, enquanto a equipe da Nova Tech pode se concentrar em seus negócios, com a certeza de que sua plataforma está em boas mãos.

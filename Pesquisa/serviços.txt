@@ -32,6 +32,12 @@ Redshift
 
 Segurança:
 
-A definir
+IAM
+KMS
+Shield
+WAF
+GuardDuty
+Macie
+MFA
 
 
