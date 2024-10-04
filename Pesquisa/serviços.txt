@@ -1,0 +1,37 @@
+
+
+Processos:
+
+AWS Cognito
+Route 53
+Cloudformation
+ELB
+EC2 (com autoscaling)
+EBS
+Rekognition
+Elasticache
+RDS (com autoscaling)
+Dynamo DB (com autoscaling)
+S3
+Glacier
+Cloudfront
+
+Monitoramento:
+
+Cloudwatch
+Alarms
+Rules
+Cloudtrail
+X-ray
+
+BI:
+
+Glue
+Athena
+Redshift
+
+Segurança:
+
+A definir
+
+
