@@ -1,5 +1,46 @@
 
+Você é um especialista em arquitetura cloud. Seu objetivo é garantir que um pequeno e-commerce obtenha alcance global utilizando serviços AWS. A startup Nova Tech, está criando um e-commerce. O time responsável pela infraestrutura decidiu contratar uma consultoria para evoluir sua arquitetura. Tendo disponível para investimento um aporte inicial de até $10.000,00 para compromissos de longo prazo, além de um orçamento mensal de $500,00 para gastos adicionais recorrentes na nuvem AWS. A Nova Tech deseja uma arquitetura baseada nas melhores práticas da AWS. Até o momento, a infraestrutura do e-commerce é apenas uma VPC em uma availbility zone com duas subnets: Uma pública, que possui um ec2 e uma privada. Os serviços que podem ser utilizados são: \\\ Processos:
 
+AWS Cognito
+Route 53
+Cloudformation
+ELB
+EC2 (com autoscaling)
+EBS
+Rekognition
+Elasticache
+RDS (com autoscaling)
+Dynamo DB (com autoscaling)
+S3
+Glacier
+Cloudfront
+
+Monitoramento:
+
+Cloudwatch
+Alarms
+Rules
+Cloudtrail
+X-ray
+
+BI:
+
+Glue
+Athena
+Redshift
+
+Segurança:
+
+IAM
+KMS
+Shield
+WAF
+GuardDuty
+Macie
+MFA
+ \\\ . Com base nisso, selecione os serviços que possam ser utilizados para garantir a companhia alcance global mas ou mesmo tempo barato o suficiente para ficar dentro do orçamento.
+
+---------------------------------
 Processos:
 
 AWS Cognito
@@ -40,4 +81,52 @@ GuardDuty
 Macie
 MFA
 
+
+----------------------------------------------------------
+
+Para garantir que a Nova Tech tenha uma arquitetura AWS de alcance global, eficiente em termos de custos e segura, podemos selecionar os seguintes serviços com base nas melhores práticas da AWS e que se ajustem ao orçamento inicial de $10.000 e mensal de $500:
+
+### 1. **Rede e DNS Global**
+   - **Amazon Route 53**: Para fornecer DNS globalmente e rotear o tráfego com baixa latência para usuários de diferentes regiões. O custo é razoável e essencial para alcançar clientes de forma eficiente.
+   - **VPC com Multi-AZ**: A VPC existente precisa ser configurada para suportar multi-regiões e multi-Availability Zones (AZs). Usar múltiplas AZs para alta disponibilidade, especialmente para o EC2 e RDS.
+
+### 2. **Aplicação e Escalabilidade**
+   - **Elastic Load Balancing (ELB)**: Para distribuir o tráfego de entrada entre várias instâncias de EC2, proporcionando redundância e escalabilidade. Pode ser configurado para suportar escalabilidade automática com base na demanda, o que ajuda a reduzir os custos.
+   - **EC2 com Auto Scaling**: Usar instâncias EC2 otimizadas para custo (exemplo, T3 ou T4) e habilitar o auto-scaling para que o serviço escale automaticamente de acordo com a demanda.
+   - **Amazon S3**: Para armazenar arquivos estáticos (imagens, vídeos, etc.) e garantir distribuição eficiente com baixo custo. Pode ser usado para backups e armazenamento de dados de longo prazo.
+
+### 3. **Distribuição de Conteúdo Global**
+   - **Amazon CloudFront**: Serviço de CDN para garantir baixa latência na entrega de conteúdo estático e dinâmico globalmente. Pode ser integrado ao S3 para uma distribuição eficiente e econômica.
+
+### 4. **Banco de Dados e Cache**
+   - **Amazon RDS com Auto Scaling**: RDS (PostgreSQL ou MySQL) pode ser configurado com auto-scaling para otimizar custos e disponibilidade. Utilize uma instância com multi-AZ para maior resiliência.
+   - **Amazon DynamoDB**: Para dados de sessão e armazenamento de dados que requerem alta disponibilidade e latência ultra baixa.
+   - **Amazon ElastiCache (Redis ou Memcached)**: Para melhorar a performance do banco de dados com cache, especialmente se houver alta demanda por leitura e escrita.
+
+### 5. **Armazenamento a Longo Prazo e Backup**
+   - **Amazon Glacier**: Para backups de longo prazo e arquivos que não precisam de acesso frequente. O Glacier é extremamente econômico para armazenamento de arquivos de baixo acesso.
+   - **EBS (Elastic Block Store)**: Para fornecer armazenamento persistente para instâncias EC2 com volumes otimizados para baixo custo.
+
+### 6. **Segurança**
+   - **AWS IAM e MFA**: Gerenciar permissões granulares e implementar a autenticação multifator para garantir segurança. IAM também permite controle de acesso a serviços de maneira centralizada.
+   - **AWS WAF e Shield**: Para proteção contra ataques DDoS e vulnerabilidades na aplicação web.
+   - **KMS (Key Management Service)**: Para gerenciamento e criptografia de chaves, garantindo que os dados estejam sempre seguros.
+   - **AWS GuardDuty e Macie**: Para monitorar ameaças e segurança dos dados, ajudando a identificar possíveis vulnerabilidades de segurança.
+
+### 7. **Monitoramento e Automação**
+   - **Amazon CloudWatch e Alarms**: Para monitorar a saúde da infraestrutura e criar alarmes em caso de falhas ou uso excessivo de recursos.
+   - **CloudTrail e X-Ray**: Para auditar as ações e monitorar o desempenho da aplicação e detectar problemas.
+
+### 8. **Automação de Infraestrutura**
+   - **AWS CloudFormation**: Para automatizar o provisionamento e a configuração da infraestrutura, facilitando o gerenciamento e o deploy de forma eficiente.
+
+---
+
+Esses serviços selecionados ajudam a alcançar um alcance global, escalabilidade, segurança e monitoramento eficazes dentro do orçamento disponível. 
+
+**Estimativa de Custo:**
+- **Custo Inicial:** A maior parte do investimento inicial de $10.000 pode ser destinada à configuração inicial da VPC com multi-AZ, ELB, RDS, S3 e configuração de CloudFront.
+- **Orçamento Mensal:** A implementação com EC2 otimizadas, RDS, e uso de CloudFront e S3 deverá se ajustar ao orçamento mensal de $500, especialmente com auto-scaling configurado adequadamente.
+
+A combinação desses serviços proporciona alta disponibilidade, alcance global e conformidade com as melhores práticas da AWS.
 
