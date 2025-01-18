@@ -1,54 +1,97 @@
-## 🛒 Escalando o E-commerce para o Infinito e Além! 🚀
+## 🌐 Alcance Global: Uma Jornada de E-commerce na Nuvem com AWS ☁️
 
 <p align="center">
-  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="400" />
+  <img src="Imagens\Arquitetura_aws.png" width="1000" alt="Diagrama da Arquitetura do Projeto Alcance Global" />
 </p>
 
-## 📋 Board - https://trello.com/b/bAbDjFvJ/alcance-global-%F0%9F%8F%A0-repo-em-https-githubcom-bhnunes-alcanceglobaledn
+### Olá! 👋
 
-## 📊 Relatório de Atividades - https://docs.google.com/document/d/1VSxGERgPeSYxXPTTnrPPYjS3QlNW-uwD/edit?usp=drive_link&ouid=113243357333179718222&rtpof=true&sd=true
+Este é o repositório do projeto **Alcance Global**, desenvolvido para o trabalho de conclusão de curso da **Escola da Nuvem**. Embarcamos em uma aventura para construir uma infraestrutura de e-commerce escalável, segura e eficiente na AWS. Se você é apaixonado por cloud e desafios, veio ao lugar certo! 😉
 
-## 🎯 Objetivo
+### 🎯 Nosso Objetivo
 
-Prepare-se para turbinar suas habilidades em nuvem com este desafio eletrizante! ⚡️ O objetivo aqui é projetar e implementar uma infraestrutura robusta e escalável para uma empresa de e-commerce em plena expansão. 📈
+Nosso foco principal foi criar uma arquitetura robusta para uma startup de e-commerce, a **Nova Tech**, com os seguintes objetivos:
 
-Ao final da jornada, você terá o superpoder de:
+-   **Escalabilidade:** Garantir que a aplicação possa lidar com picos de tráfego sem problemas.
+-   **Segurança:** Proteger os dados da aplicação e dos usuários contra ameaças.
+-   **Otimização de Custos:** Utilizar os recursos da AWS de forma eficiente para manter os custos sob controle.
+-   **Alta Disponibilidade:** Assegurar que a aplicação esteja sempre disponível para os clientes.
 
-💪🏼 **Escalar aplicações na nuvem como um mestre:** Diga adeus às dores de cabeça com picos de tráfego!
+### 🚀 A Arquitetura
 
-🔐 **Fortalecer a segurança da sua aplicação como um escudo impenetrável:** Proteja os dados dos seus usuários como um verdadeiro guardião!
+A imagem acima mostra nossa arquitetura final. Utilizamos uma combinação de serviços AWS para garantir que o projeto atenda aos requisitos da Nova Tech.
 
-💰 **Otimizar custos como um mestre da economia:**  Gaste menos, venda mais! 
+Algumas das tecnologias chave incluem:
 
-🤝 **Trabalhar em equipe como um verdadeiro líder:**  Comunicação, colaboração e respeito serão seus maiores aliados!
+*   **Rede e DNS Global:**
+    *   **Amazon Route 53:** Para DNS global e roteamento de tráfego inteligente.
+    *   **VPC Multi-AZ:** Configuração para alta disponibilidade.
 
-## 🚀 Tecnologias Utilizadas
+*   **Aplicação e Escalabilidade:**
+    *   **Elastic Load Balancing (ELB):** Distribuição de tráfego para várias instâncias EC2.
+    *   **EC2 com Auto Scaling:** Escalabilidade automática baseada na demanda.
 
-- [Adicione aqui as tecnologias utilizadas no projeto, como AWS, Azure, Docker, etc.]
+*   **Distribuição de Conteúdo Global:**
+    *   **Amazon CloudFront:** CDN para baixa latência na entrega de conteúdo.
 
-## 🧠 Habilidades Desenvolvidas
+*   **Banco de Dados e Cache:**
+    *   **Amazon RDS com Auto Scaling:** Banco de dados relacional com escalabilidade.
+    *   **Amazon DynamoDB:** Banco de dados NoSQL para dados de sessão e alta disponibilidade.
+    *   **Amazon ElastiCache:** Cache para melhorar a performance do banco de dados.
+    *   **Amazon S3:** Armazenamento de arquivos estáticos e backups.
+    *   **EBS (Elastic Block Store):** Armazenamento persistente para EC2.
 
-- Pensamento estratégico e resolução de problemas
-- Conhecimento prático de ferramentas de nuvem
-- Colaboração em equipe e comunicação eficaz
-- Otimização de custos e análise de performance
-- Implementação de medidas de segurança robustas
+*   **Segurança:**
+    *   **MFA e AWS Cognito:** Gerenciamento de acesso e autenticação multifator.
+    *   **AWS WAF e Shield:** Proteção contra ataques DDoS e vulnerabilidades.
+    *   **KMS (Key Management Service):** Gerenciamento de chaves de criptografia.
+    *   **AWS GuardDuty:** Monitoramento de ameaças e segurança dos dados.
 
-## 🛠️ Como começar
+*   **Monitoramento e Automação:**
+    *   **Amazon CloudWatch e Alarms:** Monitoramento de saúde da infraestrutura e alarmes.
+    *   **CloudTrail:** Auditoria de ações e monitoramento do desempenho da aplicação.
+    *   **AWS CloudFormation:** Automação do provisionamento e configuração da infraestrutura.
 
-1. **Bifurque este repositório:** Clique no botão "Fork" no canto superior direito da página.
-2. **Clone o repositório bifurcado para sua máquina local:**  `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
-3. **Crie uma branch para sua feature:** `git checkout -b minha-feature`
-4. **Faça suas alterações e adicione as ao stage:** `git add .`
-5. **Faça o commit das suas alterações:** `git commit -m "Adicionando minha feature"`
-6. **Faça o push da sua branch para o repositório remoto:** `git push origin minha-feature`
-7. **Crie um Pull Request:** Vá até a página do seu fork no GitHub e clique em "New Pull Request".
+### 📊 Estimativa de Custos
 
-## 🤔 Dúvidas?
+Com base na nossa arquitetura, estimamos um custo inicial de **635,80 USD**, um custo mensal de **466,66 USD**, e um custo total de **6.235,72 USD** para 12 meses.
 
-Entre em contato conosco! Adoraríamos ajudar você a se tornar um mestre da nuvem! 😄 
+*   [Link para calculadora de custos AWS](https://calculator.aws/#/estimate?id=c1c5210ac1e6c6bc7d7b3148e0c993230981c1bf)
+
+### 🛠️ Como Clonar o Repositório
+
+Para começar a explorar nosso projeto, siga estes passos:
+
+1.  **Clone o repositório:**
+
+    ```bash
+    git clone https://github.com/bhnunes/AlcanceGlobalEDN.git
+    ```
+2.  **Acesse o diretório do projeto:**
+
+    ```bash
+    cd AlcanceGlobalEDN
+    ```
+
+### 🧑‍💻 Nossa Equipe
+
+Conheça os membros da equipe que tornaram este projeto possível:
+
+*   **Heryvelton - Líder de Time:** [/heryvelton](https://www.linkedin.com/in/heryvelton)
+*   **Bruno Henrique Nunes - Arquiteto:** [/brunohenriquenunes](https://www.linkedin.com/in/brunohenriquenunes)
+*   **Letícia Lucena - Especialista Cloud:** [/leticialucena](https://www.linkedin.com/in/leticialucena/)
+*   **David Antônio - Especialista Cloud:** [/davidantonio](https://www.linkedin.com/in/davidantonio)
+*   **Rodrigo Thomaz Gerber - Especialista Segurança Cloud:** [/rodrigothomazgerber](https://www.linkedin.com/in/rodrigothomazgerber/)
+
+<p align="center">
+  <img src="Imagens\team.PNG" width="600" alt="Equipe Alcance Global" />
+</p>
+
+
+### ❓ Dúvidas ou Sugestões?
+
+Se você tiver alguma dúvida, sugestão ou quiser colaborar, sinta-se à vontade para entrar em contato! Adoraríamos ouvir suas ideias! 😄
 
 ---
-**Contribuições são sempre bem-vindas!** 😉 Sinta-se à vontade para abrir uma issue ou enviar um pull request com suas sugestões.
 
-**Juntos, vamos construir uma solução épica!** 💪🏼
+**🚀 Juntos, vamos construir o futuro da nuvem!** 💪🏼
